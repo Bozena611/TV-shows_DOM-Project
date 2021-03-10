@@ -5,3 +5,4 @@ A web app created using HTML, CSS and JavaScript which shows details of TV shows
 
 Project challenge from [*Code Your Future*](https://syllabus.codeyourfuture.io/js-core-3/tv-show-dom-project/readme)
 
+Deployed version: https://js-dom-project-bozena611.netlify.app/
