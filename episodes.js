@@ -22,7 +22,7 @@ function getOneEpisode() {
 	  },
 	};
 }
-/*
+
 function getAllEpisodes(){
 	return [
 	  {
@@ -2314,4 +2314,4 @@ function getAllEpisodes(){
 	    }
 	  }
 	]
-}*/
+}

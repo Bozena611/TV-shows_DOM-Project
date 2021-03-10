@@ -1,3 +1,17 @@
 #root {
-  color: red;
+  color: black;
 }
+
+#episodes-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.episode-div {
+	flex: 1 0 30%;
+	margin: 1em;
+}
+
+
+
