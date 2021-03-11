@@ -1,6 +1,12 @@
 function setup() {
   const allEpisodes = getAllEpisodes();
   //console.log (allEpisodes);
+
+  //===== USE LATER WHEN I HAVE SHOWS ====
+  /*let header = document.getElementById("header");
+  header.style.backgroundImage = "url(./img/the-fosters.jpg)";*/
+  //===============================================================
+  
   makePageForEpisodes(allEpisodes);
 }
 
@@ -13,6 +19,7 @@ function formatSeasonNum(num){
 }
 
 function makePageForEpisodes(allEpisodes) {
+	
 	const rootElem = document.getElementById("root");
   //console.log(allEpisodes[0].id)
   let episodesContainer = document.createElement("div");
