@@ -6,8 +6,43 @@ function setup() {
   /*let header = document.getElementById("header");
   header.style.backgroundImage = "url(./img/the-fosters.jpg)";*/
   //===============================================================
-  
+  addSearchLine();
   makePageForEpisodes(allEpisodes);
+}
+
+function addSearchLine() {
+	const rootElem = document.getElementById("root");
+
+	let searchContainer = document.createElement("div");
+	searchContainer.setAttribute("id", "search-container");
+	rootElem.appendChild(searchContainer);
+
+	let searchInputDiv = document.createElement("div");
+	searchInputDiv.setAttribute("id", "search-input-div");
+
+	let searchInputLabel = document.createElement("label");
+	searchInputLabel.setAttribute("for", "search-input");
+	searchInputLabel.setAttribute("id", "search-label");
+	searchInputLabel.innerHTML = `Search shows: `;
+	searchInputDiv.appendChild(searchInputLabel);
+
+	let searchInput = document.createElement("input");
+	searchInput.setAttribute("type", "search");
+	searchInput.setAttribute("id", "search-input");
+	searchInput.setAttribute("name", "searchshows");
+	searchInputDiv.appendChild(searchInput);
+	searchContainer.appendChild(searchInputDiv);
+
+	let displayCounterDiv = document.createElement("div");
+	displayCounterDiv.setAttribute("id", "display-counter-div");
+	searchContainer.appendChild(displayCounterDiv);
+	let displayCounterText = document.createElement("p");
+	displayCounterText.setAttribute("id", "display-counter-text");
+	displayCounterText.innerHTML = `Displaying ?/? episodes`;
+	displayCounterDiv.appendChild(displayCounterText);
+
+	searchContainer.appendChild(displayCounterDiv);
+
 }
 
 function formatSeasonNum(num){

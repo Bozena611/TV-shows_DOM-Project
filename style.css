@@ -15,6 +15,25 @@ body {
 	margin: 0;
 }
 
+#search-container {
+	display: flex;
+	align-items: center;
+
+}
+
+#search-label {
+	color: white;
+	margin-right: 0.5em;
+}
+
+#display-counter-div {
+	margin-left: 0.8em;
+}
+
+#display-counter-text {
+	color: white;
+}
+
 #episodes-container {
 	display: flex;
 	flex-wrap: wrap;
